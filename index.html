@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="playerStyle.css">
+  <title>Мой плеер</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="player-container">
+      <ul class="player-box" id="playerBox">
+        <li class="player-img-song">
+          <div class="player-img-song-songs"></div>
+        </li>
+        <li class="player-name-song">
+          <div class="player-plaing">Now Playing</div>
+          <div class="song-name">"A long song title that goes all the way to this point here......."</div>
+          <div class="artist-name">Artist Name</div>
+        </li>
+        <li class="player-play-sound-on">
+          <div class="player-sound-on" id="playerSoundOn"></div>
+        </li>
+        <li class="player-play-pause">
+          <div class="player-play" id="playerPlay"></div>
+        </li>
+        <li class="setting">
+          <div class="player-share-fon">
+            <div class="player-share">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-container">
+      <div class="nav-menu">
+        <h2 class="tittle-library">Library</h2>
+        <ul class="nav-menu-block">
+          <li class="nav-menu-block-item">Originals</li>
+          <li class="nav-menu-block-item">Focus</li>
+          <li class="nav-menu-block-item">Work</li>
+          <li class="nav-menu-block-item">Chill</li>
+          <li class="nav-menu-block-item">Decades
+            <div class="arrow"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.709563 1.71L3.29956 4.3C3.68956 4.69 4.31956 4.69 4.70956 4.3L7.29956 1.71C7.92956 1.08 7.47956 0 6.58956 0H1.40956C0.519563 0 0.0795632 1.08 0.709563 1.71Z"
+                  fill="#27292D" />
+              </svg></div>
+            <ul class="nav-menu-block-item-decades">
+              <li><a href="">Now</a></li>
+              <li><a href="">2010s</a></li>
+              <li><a href="">2000s</a></li>
+              <li><a href="">1990s</a></li>
+              <li><a href="">1980s</a></li>
+              <li><a href="">1970s</a></li>
+              <li><a href="">1960s</a></li>
+              <li><a href="">1950s</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-block-item" id="menuSave">Saved</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-saves" id="menuSaves">
+      <div class="sub-menu-saves">
+        <p class="sub-menu-saveds">Your saved content will appear here. Click on <span class="sub-menu-plus"><img
+              src="img/plus.save.png" width="20" height="20" alt="plus.save"></span>to save.</p>
+        <div class="sub-menu-recomd">Recommended For You</div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="list-of-songs">
+      <div class="menu-list-of-songs">
+        <div class="menu-list-of-songs-nav">
+          <div class="menu-list-of-songs-item">Name</div>
+          <div class="menu-list-of-songs-item">Tagline</div>
+          <div class="menu-list-of-songs-item">Saved</div>
+          <div class="menu-list-of-songs-item">Share</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="songs-container">
+      <div class="nav-songs-list">
+        <ul class="nav-song-container" data-songs-id="0" value="Event type">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-1"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles title-1">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-1">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container" data-songs-id="1">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-2"></div>
+            <div class="nav-song-img-imgs-fon"></div>
+            <div class="nav-song-img-imgs-fon-plays"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles title-2">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-2">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li data-src class="nav-song-img">
+            <div class="nav-song-img-imgs img-3"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-3">Spooky Scary Skeletons</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-3">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-4"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-4">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-4">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-5"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-5">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-5">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-6"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-6">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-6">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-7"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-7">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-7">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-8"></div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-8">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-8">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-9"> </div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-9">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-9">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-9"> </div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-9">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-9">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-song-container">
+          <li class="nav-song-img">
+            <div class="nav-song-img-imgs img-9"> </div>
+          </li>
+          <li class="nav-song-title">
+            <div class="nav-song-title-titles titles-9">1 Line title that truncates here when its hhhhhh</div>
+          </li>
+          <li class="nav-song-tagline">
+            <div class="nav-song-tagline-tiglines tiglines-9">1 Line title that truncates here when its h</div>
+          </li>
+          <li class="nav-song-saved">
+            <div class="nav-song-saved-saveds"></div>
+          </li>
+          <li class="nav-song-share">
+            <div class="nav-song-share-shares">
+              <ul class="player-share-subMenu">
+                <li><a href="">Share in Chat</a></li>
+                <li><a href="">Share in Email</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
